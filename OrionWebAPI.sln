@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrionWebAPI", "OrionWebAPI\OrionWebAPI.csproj", "{8DA2DF0F-150B-49BD-AEB9-21BCCD7A2BE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbGame", "DbGame\DbGame.csproj", "{D86BFEC9-727E-4CA4-80B7-1B6EDE7BF7BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DA2DF0F-150B-49BD-AEB9-21BCCD7A2BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA2DF0F-150B-49BD-AEB9-21BCCD7A2BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA2DF0F-150B-49BD-AEB9-21BCCD7A2BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA2DF0F-150B-49BD-AEB9-21BCCD7A2BE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86BFEC9-727E-4CA4-80B7-1B6EDE7BF7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86BFEC9-727E-4CA4-80B7-1B6EDE7BF7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86BFEC9-727E-4CA4-80B7-1B6EDE7BF7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86BFEC9-727E-4CA4-80B7-1B6EDE7BF7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F668F59-AB79-4298-A321-3CA2B7E1ED95}
+	EndGlobalSection
+EndGlobal
