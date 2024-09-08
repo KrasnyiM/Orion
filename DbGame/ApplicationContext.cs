@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.EntityFrameworkCore;
+
 
 namespace DbGame
 {
@@ -16,32 +10,12 @@ namespace DbGame
         public DbSet<Accounting> Accountings {get; set;}
 
         public ApplicationContext(DbContextOptions<ApplicationContext> dbContextOptions) : base(dbContextOptions)
-        {
-            //Database.EnsureDeleted();
+        {            
             Database.EnsureCreated();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder
-            //    .Entity<Game>()
-            //    .HasMany(u => u.Users)
-            //    .WithMany(g => g.Games)
-            //    .UsingEntity<Accounting>(
-            //        j => j
-            //        .HasOne(pt => pt.User)
-            //        .WithMany(t => t.Accounting)
-            //        .HasForeignKey(pt => pt.UserId),
-            //        j => j
-            //        .HasOne(pt => pt.Game)
-            //        .WithMany(p => p.Accounting)
-            //        .HasForeignKey(pt => pt.GameId),
-            //        j =>
-            //        {
-            //            j.Property(pt => pt.DateTime).HasDefaultValue(DateTime.Now);
-            //            j.HasKey(t => new { t.UserId, t.GameId });
-            //            j.ToTable("Accountings");
-            //        });
             modelBuilder.Entity<Game>().HasMany(e => e.Users).WithMany(e => e.Games)
                 .UsingEntity<Accounting>();
 
