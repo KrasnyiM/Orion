@@ -12,6 +12,7 @@ namespace DbGame
         public string SystemRequirements { get; set; }
         [JsonIgnore]
         public List<User> Users { get; set; } = new List<User>();
+        [JsonIgnore]
         public List<Accounting> Accounting { get; set; } 
     }
 }
