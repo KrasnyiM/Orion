@@ -1,5 +1,4 @@
 ﻿
-
 namespace DbGame
 {
     public class UserResponseDto

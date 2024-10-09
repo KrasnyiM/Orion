@@ -37,10 +37,10 @@ namespace OrionWebAPI.Controlers
         }
 
         [HttpGet("get-accountings")]
-        public IActionResult GetAccounting()
+        public IActionResult GetAccountings()
         {
             var accounting = _context.Accountings
-                .Include(g => g.Game).Include(g => g.User).ToList();
+                .Include(o => o.User).Include(o => o.Game).ToList();
 
             return Ok(accounting);
         }
@@ -48,15 +48,15 @@ namespace OrionWebAPI.Controlers
         [HttpGet("get-accounting")]
         public IActionResult GetAccounting(int id)
         {
-            var accounting = _context.Accountings
-                .Where(a => a.Id == id).Include(a => a.Game)
-                .Include(a => a.User).FirstOrDefault();
+            var user = _context.Accountings
+                .Where(o => o.Id == id).Include(o => o.User).Include(o => o.Game).FirstOrDefault();
 
-            if( accounting == null)
+            if( user == null)
             {
                 return BadRequest();
             }
-            return Ok(accounting);
+
+            return Ok(user);
         }
 
         

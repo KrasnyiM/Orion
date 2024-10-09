@@ -10,7 +10,7 @@ namespace DbGame
         public DbSet<Accounting> Accountings {get; set;}
 
         public ApplicationContext(DbContextOptions<ApplicationContext> dbContextOptions) : base(dbContextOptions)
-        {            
+        {
             Database.EnsureCreated();
         }
 
