@@ -64,7 +64,7 @@ namespace DbGame
                     Name = "Red Dead Redemtion 2",
                     Genre = "RPG",
                     SystemRequirements = "Powerful PC",
-                    Description = "It is a classic game about wild West with cowboys and revolvers",
+                    Description = ":)",
                     Price = 699
                 },
                 new Game
@@ -73,7 +73,7 @@ namespace DbGame
                     Name = "Dota 2",
                     Genre = "MMORPG",
                     SystemRequirements = "Not PC, calculator",
-                    Description = "A Game about niggers, who try to destroy your ass. The conception of the game is one on nine",
+                    Description = ":)",
                     Price = 666
                 },
                 new Game
@@ -82,7 +82,7 @@ namespace DbGame
                     Name = "World of tanks",
                     Genre = "MMORPG",
                     SystemRequirements = "Not PC, calculator",
-                    Description = "If you play in this game, you are idiot",
+                    Description = ":)",
                     Price = 0
                 });
         }
